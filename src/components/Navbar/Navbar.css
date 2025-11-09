@@ -1,48 +1,38 @@
-
-
-.navbar{
-    width: 100%;
-    background-color: #D7CE93;
-    /* border-radius: 20px; */
-    padding: 4px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 10;
-    
-
-}
-.img{
-     height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    border: 1px solid #dadada;
-    padding: 1px;
-}
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 5px 20px;
-    font-size: 20px;
-    
-
-
-}
-.navbar-menu li a:hover {
-  color: #667eea;
+.navbar {
+  /* background-color: #D7CE93; */
+  background-color: #544e29;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.navbar-auth {
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
   display: flex;
-  gap: 15px;
+  justify-content: space-between;
   align-items: center;
 }
 
-.login-link {
+.navbar-logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li a {
   color: #fff;
   text-decoration: none;
   font-size: 16px;
@@ -50,14 +40,19 @@ nav ul li {
   transition: color 0.3s ease;
 }
 
-.login-link:hover {
+.navbar-menu li a:hover {
   color: #667eea;
 }
 
-.signup-btn {
+.navbar-auth {
+  display: flex;
+  align-items: center;
+}
+
+.login-btn {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border-radius: 8px;
   text-decoration: none;
   font-size: 16px;
@@ -65,10 +60,7 @@ nav ul li {
   transition: transform 0.2s ease;
 }
 
-.signup-btn:hover {
+.login-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-}
-.dark-nev{
-    background-color: #D7CE93;
 }

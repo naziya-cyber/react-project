@@ -1,42 +1,29 @@
-import react, { useEffect, useState } from 'react'
-import './navbar.css'
-import logo from './../../assets/logo2.jpeg'
+import React from 'react';
 import { Link } from 'react-router-dom';
+import './Navbar.css';
+
 
 const Navbar = () => {
-  const [sticky, setSticky] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setSticky(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup on unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-
   return (
-   <nav className={`navbar container ${sticky ? 'sticky' : ''}`}>
-    <img  className="img"  src={logo} alt="" />
-    <ul>
-        <li>Home</li>
-        <li>Programs</li>
-        <li>About us</li>
-        <li>Contect</li>
-        
-
-    </ul>
-    <div className="navbar-auth">
-          <Link to="/login" className="login-link">Login</Link>
-          <Link to="/signup" className="signup-btn">Sign Up</Link>
+    <nav className="navbar">
+      <div className="navbar-container">
+        <div className="navbar-logo">
+          <Link to="/">EduPlatform</Link>
         </div>
-   </nav>
-  )
-}
+        
+        <ul className="navbar-menu">
+          <li><Link to="/">Home</Link></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <div className="navbar-auth">
+          <Link to="/login" className="login-btn">Login</Link>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
