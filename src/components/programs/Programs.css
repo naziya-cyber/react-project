@@ -1,10 +1,13 @@
 body{
-    background-color: #D7CE93;
+    background-color: #544e29;
     height: 100%;
     width: 100%;
+    
 }
 
+
 .parent{
+    
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -22,6 +25,7 @@ body{
     justify-content: space-between;
     margin: 10px;
     overflow: hidden;
+    border: 4px solid #b6b3b3;
 }
 
 .card .top{
@@ -31,6 +35,13 @@ body{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 5px 20px rgba(221, 218, 212, 0.4);
+    transform: translateY(-8px);
+    
+  
 }
 
 .top img{

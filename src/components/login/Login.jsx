@@ -64,10 +64,7 @@ const Login = () => {
           <button type="submit" className="login-btn">Login</button>
         </form>
 
-        <div className="extra-links">
-          <a href="#">Forgot Password?</a>
-          {/* <p>Don't have an account? <a href="#">Sign Up</a></p> */}
-        </div>
+        
       </div>
     </div>
   );
