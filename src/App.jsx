@@ -1,11 +1,14 @@
+import React from 'react';
 import Navbar from './components/Navbar/Navbar.jsx'
 import './App.css';
 import Hero from './components/Hero/Hero.jsx';
 import Programs from './components/programs/Programs.jsx'
-import Tittle from './components/Title/Title.jsx'
+import Title from './components/Title/Title.jsx'
 import './components/programs/Programs.css'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './components/login/Login.jsx'
+import Footer from './components/footer/Footer.jsx'
+import About from './components/About/About.jsx'
 
 const App = () => {
   const programs = [
@@ -135,8 +138,8 @@ const App = () => {
     <>
       <Navbar />
       <Hero />
-      <div className='container'>
-        <Tittle title="What we offers" subtitle="OUR PROGRAM" />
+      <div className='container' id="programs">
+        <Title title="What we offer" subtitle="OUR PROGRAM" />
         <div className='parent'>
           {programs.map(function(elem){
             return <Programs 
@@ -145,12 +148,16 @@ const App = () => {
               title={elem.title} 
               teacher={elem.teacher}
               fees={elem.fees} 
-              image={elem.image} 
+              image={elem.image}
+              level={elem.level}
+              rating={elem.rating}
               key={elem.id}
             />
           })}
         </div>
       </div>
+      <About />
+      <Footer />
     </>
   );
 
@@ -164,4 +171,4 @@ const App = () => {
   );
 }
 
-export default App
+export default App;

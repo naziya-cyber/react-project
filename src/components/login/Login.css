@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #63270d 0%, #170b06 100%);
   padding: 20px;
 }
 
@@ -41,6 +41,10 @@
   text-align: center;
 }
 
+.login-form {
+  margin-bottom: 20px;
+}
+
 .form-group {
   margin-bottom: 20px;
 }
@@ -72,14 +76,14 @@
 .login-btn {
   width: 100%;
   padding: 14px;
-  background: linear-gradient(135deg, #9e8840 0%, #987939 100%);
+  background: linear-gradient(135deg, #b49d8a 0%, #463515 100%);
   color: white;
   border: none;
   border-radius: 10px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin-top: 10px;
 }
 
@@ -98,14 +102,21 @@
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .extra-links a:hover {
   text-decoration: underline;
 }
 
-.extra-links p {
+.extra-links .back-home {
   margin-top: 15px;
   font-size: 14px;
-  color: #666;
+  color: #667eea;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.extra-links .back-home:hover {
+  text-decoration: underline;
 }

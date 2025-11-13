@@ -1,11 +1,13 @@
 .navbar {
   /* background-color: #D7CE93; */
-  background-color: #544e29;
+  background-color: #63270d;
   padding: 15px 0;
   position: sticky;
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 .navbar-container {
@@ -15,13 +17,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .navbar-logo a {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   color: #fff;
   text-decoration: none;
+
 }
 
 .navbar-menu {
@@ -47,10 +51,11 @@
 .navbar-auth {
   display: flex;
   align-items: center;
+ 
 }
 
 .login-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4f3816 0%, #51340b 100%);
   color: white;
   padding: 10px 25px;
   border-radius: 8px;

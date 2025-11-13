@@ -17,16 +17,12 @@ const Login = () => {
       return;
     }
 
-    // Simple validation (you can replace with API call)
+    // Demo credentials check
     if (email === 'user@example.com' && password === 'password123') {
-      // Save user data to localStorage
-      const userData = { email, name: 'User' };
-      localStorage.setItem('user', JSON.stringify(userData));
-      
-      // Navigate to home page
+      alert('Login successful! Welcome back!');
       navigate('/');
     } else {
-      setError('Invalid email or password');
+      setError('Invalid credentials. Try: user@example.com / password123');
     }
   };
 
@@ -38,7 +34,7 @@ const Login = () => {
         
         {error && <div className="error-message">{error}</div>}
         
-        <form onSubmit={handleSubmit}>
+        <div className="login-form">
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
@@ -58,15 +54,20 @@ const Login = () => {
               placeholder="Enter your password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              onKeyPress={(e) => {
+                if (e.key === 'Enter') {
+                  handleSubmit(e);
+                }
+              }}
             />
           </div>
 
-          <button type="submit" className="login-btn">Login</button>
-        </form>
+          <button onClick={handleSubmit} className="login-btn">Login</button>
+        </div>
 
         <div className="extra-links">
-          <a href="#">Forgot Password?</a>
-          {/* <p>Don't have an account? <a href="#">Sign Up</a></p> */}
+          <a href="#" onClick={(e) => { e.preventDefault(); alert('Feature coming soon!'); }}>Forgot Password?</a>
+          <p className="back-home" onClick={() => navigate('/')}>← Back to Home</p>
         </div>
       </div>
     </div>

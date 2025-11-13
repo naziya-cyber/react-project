@@ -1,0 +1,50 @@
+.footer-container {
+  background-color: #63270d;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 50px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-tagline {
+  margin-bottom: 20px;
+  color: #ddd;
+  font-size: 16px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #667eea;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: #bbb;
+  margin-top: 20px;
+}
