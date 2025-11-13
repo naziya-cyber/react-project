@@ -23,21 +23,21 @@
   
 }
 
-<<<<<<< HEAD
+
 .navbar-logo a {
   font-size: 30px;
   font-weight: 700;
   color: #fff;
   text-decoration: none;
+}
 
-=======
 .navbar-logo {
   font-size: 32px;
   font-weight: 700;
   color: #fff;
   text-decoration: none;
   font-family: "Shadows Into Light", cursive;
->>>>>>> 350fe56d753e391ac4c39a342b1e5e3eb2eb484f
+
 }
 
 .navbar-menu {
