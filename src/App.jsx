@@ -12,127 +12,119 @@ import About from './components/About/About.jsx'
 
 const App = () => {
   const programs = [
-    {
-      id: 1,
-      title: "Full Stack Web Development",
-      category: "Programming",
-      description: "Master HTML, CSS, JavaScript, React, Node.js, and MongoDB to become a full-stack developer.",
-      duration: "6 Months",
-      fees: "₹25,000",
-      teacher: "Aman Verma",
-      level: "Intermediate",
-      rating: 4.8,
-      image: "https://fiverr-res.cloudinary.com/videos/so_48.708688,t_main1,q_auto,f_auto/xtu7oxpvauthg9jwpuwh/do-react-angular-node-development-for-your-web-app.png"
-    },
-    {
-      id: 2,
-      title: "Python for Data Science",
-      category: "Data Science",
-      description: "Learn Python programming, data analysis, visualization, and machine learning fundamentals.",
-      duration: "4 Months",
-      fees: "₹20,000",
-      teacher: "Dr. Sneha Kapoor",
-      level: "Beginner",
-      rating: 4.7,
-      image: "https://www.opensourceforu.com/wp-content/uploads/2020/06/Data-Visualisation_May-2020.jpg"
-    },
-    {
-      id: 3,
-      title: "Java Programming Essentials",
-      category: "Programming",
-      description: "Understand Java syntax, OOP concepts, and build strong foundations for software development.",
-      duration: "3 Months",
-      fees: "₹15,000",
-      teacher: "Rohit Sharma",
-      level: "Beginner",
-      rating: 4.6,
-      image: "https://miro.medium.com/v2/resize:fit:1200/1*BTat1iehnwFKV5efkLR2PA.png"
-    },
-    {
-      id: 4,
-      title: "C++ Masterclass",
-      category: "Programming",
-      description: "Deep dive into C++ concepts including pointers, data structures, and competitive coding.",
-      duration: "3 Months",
-      fees: "₹18,000",
-      teacher: "Kiran Patel",
-      level: "Intermediate",
-      rating: 4.5,
-      image: "https://img.freepik.com/premium-photo/programming-code-abstract-technology-background_272306-158.jpg?w=360"
-    },
-    {
-      id: 5,
-      title: "UI/UX Design Fundamentals",
-      category: "Design",
-      description: "Learn design thinking, wireframing, and prototyping with Figma and Adobe XD.",
-      duration: "2 Months",
-      fees: "₹12,000",
-      teacher: "Ananya Roy",
-      level: "Beginner",
-      rating: 4.8,
-      image: "https://www.techicy.com/wp-content/uploads/2021/09/What-is-UX-and-UI-Design.jpg"
-    },
-    {
-      id: 6,
-      title: "Android App Development with Kotlin",
-      category: "Mobile Development",
-      description: "Create native Android apps using Kotlin, Android Studio, and Firebase integration.",
-      duration: "5 Months",
-      fees: "₹22,000",
-      teacher: "Vikas Mehta",
-      level: "Intermediate",
-      rating: 4.7,
-      image: "https://tse3.mm.bing.net/th/id/OIP.VgfiGtE--ERlIOwdCoKvnwHaE8?cb=ucfimgc2&w=1024&h=683&rs=1&pid=ImgDetMain&o=7&rm=3"
-    },
-    {
-      id: 7,
-      title: "Machine Learning & AI",
-      category: "Data Science",
-      description: "Explore supervised, unsupervised learning, and neural networks using Python and TensorFlow.",
-      duration: "6 Months",
-      fees: "₹30,000",
-      teacher: "Dr. Ritu Nair",
-      level: "Advanced",
-      rating: 4.9,
-      image: "https://cdn.pixabay.com/photo/2024/01/29/22/47/ai-generated-8540915_1280.jpg"
-    },
-    {
-      id: 8,
-      title: "Cybersecurity & Ethical Hacking",
-      category: "Security",
-      description: "Learn network security, penetration testing, and ethical hacking tools & techniques.",
-      duration: "4 Months",
-      fees: "₹24,000",
-      teacher: "Aditya Malhotra",
-      level: "Intermediate",
-      rating: 4.6,
-      image: "https://tse1.mm.bing.net/th/id/OIP.WHZ_ZejzHmFu2A3XYyI02QHaD4?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3"
-    },
-    {
-      id: 9,
-      title: "Digital Marketing Pro",
-      category: "Marketing",
-      description: "Master SEO, Google Ads, content strategy, and social media marketing to grow any brand.",
-      duration: "3 Months",
-      fees: "₹14,000",
-      teacher: "Nidhi Singh",
-      level: "Beginner",
-      rating: 4.5,
-      image: "https://tse3.mm.bing.net/th/id/OIP.JERpZ78cj0lFSBTyYo_g-wHaEO?cb=ucfimgc2&w=1050&h=600&rs=1&pid=ImgDetMain&o=7&rm=3"
-    },
-    {
-      id: 10,
-      title: "Data Structures & Algorithms (DSA)",
-      category: "Programming",
-      description: "Crack coding interviews by mastering algorithms, recursion, and problem-solving in C++ or Java.",
-      duration: "4 Months",
-      fees: "₹20,000",
-      teacher: "Harsh Agarwal",
-      level: "Advanced",
-      rating: 4.9,
-      image: "https://repository-images.githubusercontent.com/797203940/0aea70b7-7988-4d9b-b3b0-9352ace014c6"
-    }
-  ];
+  {
+    id: 1,
+    title: "Deep Learning with Neural Networks",
+    category: "Artificial Intelligence",
+    description: "Master deep learning architectures, CNNs, RNNs, and transformers using TensorFlow and PyTorch.",
+    duration: "6 Months",
+    fees: "₹25,000",
+    teacher: "Aman Verma",
+    level: "Intermediate",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    id: 2,
+    title: "Machine Learning Fundamentals",
+    category: "Machine Learning",
+    description: "Learn supervised and unsupervised learning, regression, classification, and model evaluation.",
+    duration: "4 Months",
+    fees: "₹20,000",
+    teacher: "Dr. Sneha Kapoor",
+    level: "Beginner",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    id: 3,
+    title: "Natural Language Processing",
+    category: "Artificial Intelligence",
+    description: "Understand NLP concepts, text processing, sentiment analysis, and language models like BERT and GPT.",
+    duration: "3 Months",
+    fees: "₹15,000",
+    teacher: "Rohit Sharma",
+    level: "Beginner",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    id: 4,
+    title: "Computer Vision & Image Recognition",
+    category: "Artificial Intelligence",
+    description: "Deep dive into image processing, object detection, facial recognition, and CNN architectures.",
+    duration: "3 Months",
+    fees: "₹18,000",
+    teacher: "Kiran Patel",
+    level: "Intermediate",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    id: 5,
+    title: "AI-Powered Chatbots & Virtual Assistants",
+    category: "Artificial Intelligence",
+    description: "Learn to build intelligent chatbots using NLP, dialogue systems, and conversational AI frameworks.",
+    duration: "2 Months",
+    fees: "₹12,000",
+    teacher: "Ananya Roy",
+    level: "Beginner",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    id: 6,
+    title: "Reinforcement Learning & AI Agents",
+    category: "Machine Learning",
+    description: "Create intelligent agents using Q-learning, policy gradients, and deep reinforcement learning.",
+    duration: "5 Months",
+    fees: "₹22,000",
+    teacher: "Vikas Mehta",
+    level: "Intermediate",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    id: 7,
+    title: "Generative AI & Large Language Models",
+    category: "Artificial Intelligence",
+    description: "Explore GANs, diffusion models, and fine-tune LLMs like GPT and Llama for custom applications.",
+    duration: "6 Months",
+    fees: "₹30,000",
+    teacher: "Dr. Ritu Nair",
+    level: "Advanced",
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1176"
+  },
+  {
+    id: 8,
+    title: "MLOps & AI Model Deployment",
+    category: "Machine Learning",
+    description: "Learn model deployment, monitoring, CI/CD for ML, Docker, Kubernetes, and cloud platforms.",
+    duration: "4 Months",
+    fees: "₹24,000",
+    teacher: "Aditya Malhotra",
+    level: "Intermediate",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    id: 9,
+    title: "AI for Data Analytics & Predictions",
+    category: "Machine Learning",
+    description: "Master predictive modeling, time series forecasting, and AI-driven business intelligence tools.",
+    duration: "3 Months",
+    fees: "₹14,000",
+    teacher: "Nidhi Singh",
+    level: "Beginner",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1200&q=80"
+  }
+];
+
+    
+      
+      
 
   const HomePage = () => (
     <>

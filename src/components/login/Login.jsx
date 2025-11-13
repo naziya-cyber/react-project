@@ -65,10 +65,7 @@ const Login = () => {
           <button onClick={handleSubmit} className="login-btn">Login</button>
         </div>
 
-        <div className="extra-links">
-          <a href="#" onClick={(e) => { e.preventDefault(); alert('Feature coming soon!'); }}>Forgot Password?</a>
-          <p className="back-home" onClick={() => navigate('/')}>← Back to Home</p>
-        </div>
+       
       </div>
     </div>
   );

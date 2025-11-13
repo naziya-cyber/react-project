@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
 .navbar {
   /* background-color: #D7CE93; */
   background-color: #63270d;
@@ -20,12 +23,21 @@
   
 }
 
+<<<<<<< HEAD
 .navbar-logo a {
   font-size: 30px;
   font-weight: 700;
   color: #fff;
   text-decoration: none;
 
+=======
+.navbar-logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Shadows Into Light", cursive;
+>>>>>>> 350fe56d753e391ac4c39a342b1e5e3eb2eb484f
 }
 
 .navbar-menu {
